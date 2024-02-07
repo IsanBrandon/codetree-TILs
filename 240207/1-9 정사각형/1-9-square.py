@@ -3,7 +3,7 @@ cnt = 1
 
 for i in range(n):
     for i in range(n):
-        if cnt == 9:
+        if cnt == 10:
             cnt = 1
         print(cnt, end="")
         cnt += 1
