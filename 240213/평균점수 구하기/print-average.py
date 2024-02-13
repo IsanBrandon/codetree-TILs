@@ -1,3 +1,5 @@
 arr = list(map(float, input().split()))
 
-print(sum(arr) / 8)
+avg = sum(arr) / 8
+
+print(f"{avg:.1f}")
