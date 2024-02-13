@@ -1,15 +1,16 @@
 arr = list(map(int, input().split()))
-even_sum = 0
-multi_3_sum = 0
-multi_3_cnt = 0
+sum2 = 0
+sum3 = 0
+cnt = 0
 
-for elem in arr:
-    if elem % 2 == 0:
-        even_sum += elem
-    if elem % 3 == 0:
-        multi_3_sum += elem
-        multi_3_cnt += 1
+for i in range(10):
+    if (i + 1) % 2 == 0:
+        sum2 += arr[i]
+    if (i + 1) % 3 == 0:
+        sum3 += arr[i]
+        cnt += 1
 
-avg_3 = multi_3_sum / multi_3_cnt
 
-print(f"{even_sum} {avg_3 :1.f}")
+avg3 = sum3 / cnt
+
+print(f"{sum2} {avg3 :1.f}")
