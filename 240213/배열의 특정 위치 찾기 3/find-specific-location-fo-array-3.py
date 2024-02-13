@@ -3,11 +3,11 @@ cnt = 0
 sum_val = 0
 
 for elem in arr:
+    cnt += 1
     if elem == 0:
         break
-    cnt += 1
 
-for i in range(cnt):
+for i in range(cnt-3, cnt, 1):
     sum_val += arr[i]
 
 print(sum_val)
