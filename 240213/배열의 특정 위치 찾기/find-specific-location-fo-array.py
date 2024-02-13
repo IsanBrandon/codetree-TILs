@@ -13,4 +13,4 @@ for i in range(10):
 
 avg3 = sum3 / cnt
 
-print(f"{sum2} {avg3 :1.f}")
+print(f"{sum2} {avg3 :.1f}")
