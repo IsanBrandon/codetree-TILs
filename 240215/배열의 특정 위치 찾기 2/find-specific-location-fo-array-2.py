@@ -2,11 +2,11 @@ arr = list(map(int, input().split()))
 even_sum = 0
 odd_sum = 0
 
-for elem in arr:
-    if elem % 2 == 0:
-        even_sum += elem
+for i in range(len(arr)):
+    if i % 2 == 0:
+        even_sum += arr[i]
     else:
-        odd_sum += elem
+        odd_sum += arr[i]
 
 if even_sum >= odd_sum:
     print(even_sum - odd_sum)
