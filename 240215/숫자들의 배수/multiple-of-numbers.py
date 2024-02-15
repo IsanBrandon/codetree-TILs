@@ -1,6 +1,6 @@
 n = int(input())
 cnt = 0
-arr = [elem * i for i in range(1, 51, 1)]
+arr = [n * i for i in range(1, 51, 1)]
 
 for elem in arr:
     if elem % 5 == 0:
@@ -8,4 +8,4 @@ for elem in arr:
     if cnt == 3:
         break
     else:
-        print(elem)
+        print(elem, end=" ")
