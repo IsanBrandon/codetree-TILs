@@ -1,5 +1,5 @@
 sum_val = 0
-
+arr = []
 arr[0], arr[1] = tuple(map(int, input().split()))
 
 for i in range(3, 11):
