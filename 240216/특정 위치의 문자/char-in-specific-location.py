@@ -7,3 +7,5 @@ char = input()
 
 if char in word:
     print(word.index(char))
+else:
+    print("None")
