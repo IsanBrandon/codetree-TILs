@@ -18,7 +18,7 @@ if when_purchased_index == len(mobile_prices_per_years) - 1:
 after_purchasing_max_price = 0
 
 for price in mobile_prices_per_years[when_purchased_index + 1:]:
-    if after_purchasing_max_price < price:
+    if after_purchasing_max_price <= price:
         after_purchasing_max_price = price
 
 if after_purchasing_max_price - min_price <= 0:
