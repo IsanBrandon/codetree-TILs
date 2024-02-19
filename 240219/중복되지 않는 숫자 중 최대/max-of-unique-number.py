@@ -1,5 +1,5 @@
 n = int(input())
-nums = list(int(input().split()))
+nums = list(map(int, input().split()))
 
 max_num = -1
 
