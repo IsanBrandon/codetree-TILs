@@ -5,16 +5,16 @@ arr_2d = [
     for _ in range(n)
 ]
 
-num = 1
+num = 0
 
 for j in range(m):
     for i in range(n):
-        if i % 2 == 0:
+        if j % 2 == 0:
             arr_2d[i][j] += num
             num += 1
 
         else:
-            arr_2d[m-1-i][j] += num
+            arr_2d[n-1-i][j] += num
             num += 1  
 
 for row in arr_2d:
