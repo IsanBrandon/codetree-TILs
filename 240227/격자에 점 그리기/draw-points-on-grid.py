@@ -10,6 +10,7 @@ count = 1
 for _ in range(m):
     r, c = tuple(map(int, input().split()))
     placed[r-1][c-1] = count
+    count += 1
 
 for i in range(n):
     for j in range(n):
