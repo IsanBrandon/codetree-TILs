@@ -11,5 +11,5 @@ for elem in arr:
         print(elem)
         exsist = True
         
-if exsist = False:
+if exsist == False:
     print('None')
