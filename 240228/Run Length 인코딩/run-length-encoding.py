@@ -6,7 +6,7 @@ encoded = ""
 # 입력의 첫번쩨 값을 읽고 초기화합니다.
 curr_char = string[0]
 num_chr = 1
-for traget_char in A[1:]:
+for traget_char in string[1:]:
     if traget_char == curr_char:
         # 지금까지의 문자와 같으면 연속된 문자 개수만 추가해 주고 넘어갑니다.
         num_chr += 1
