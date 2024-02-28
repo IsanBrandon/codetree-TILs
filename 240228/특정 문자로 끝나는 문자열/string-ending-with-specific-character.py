@@ -4,9 +4,12 @@ arr = [
 ]
 
 the_chr = input()
+exsist = False
 
 for elem in arr:
     if elem[-1] == the_chr:
         print(elem)
-    else:
-        print('None')
+        exsist = True
+        
+if exsist = False:
+    print('None')
