@@ -8,7 +8,7 @@ while True:
 
     n = int(input())
     
-    if n > len(arr):
+    if n > len(arr)-1:
         arr.pop(len(arr)-1)
     else:
         arr.pop(n)
