@@ -13,7 +13,7 @@ for _ in range(int_n):
         modified1 = ''.join(arr1)
         print(modified1)
     else:
-        modified2 = string
+        modified2 = modified1
         arr2 = list(modified2)
         for i in range(len(arr2)):
             if arr2[i] == w1:
