@@ -6,7 +6,7 @@ list_str = list(string)
 leng_str = len(string)
 
 for i in range(leng_com):
-    if list_str[i] == 'L':
+    if commend[i] == 'L':
         front = list_str[0]
         for i in range(1, leng_str):
             list_str[i - 1] = list_str[i]
