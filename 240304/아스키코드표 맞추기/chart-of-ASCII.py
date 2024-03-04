@@ -1,4 +1,5 @@
-ascii = list(map(chr, input().split()))
+ascii = list(map(int, input().split()))
+
 
 for elem in ascii:
-    print(elem, end=" ")
+    print(chr(elem), end=" ")
