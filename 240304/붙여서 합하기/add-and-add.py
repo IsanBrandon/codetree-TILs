@@ -1,7 +1,7 @@
 A, B = tuple(input().split())
 
-str1 = a + b
-str2 = b + a
+str1 = A + B
+str2 = B + A
 
 str1_int = int(str1)
 str2_int = int(str2)
