@@ -6,6 +6,4 @@ def sum_n_devided(n):
         sum_val += i
     return sum_val // 10
 
-ans = sum_n_devided(num)
-
-print(ans)
+print(sum_n_devided(num))
