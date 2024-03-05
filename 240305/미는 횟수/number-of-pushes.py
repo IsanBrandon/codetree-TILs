@@ -9,7 +9,7 @@ for i in range(leng):
     str_A = str_A[-1] + str_A[:-1]
     n += 1
 
-    if a == b:
+    if str_A == str_B:
         flag = 1
         break 
 
