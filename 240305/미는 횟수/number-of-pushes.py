@@ -1,19 +1,16 @@
 str_A = input()
 str_B = input()
 
-n = 0
+
 leng = len(str_A)
-flag = -1
+cnt = 0
 
 for i in range(leng):
     str_A = str_A[-1] + str_A[:-1]
-    n += 1
+    cnt += 1
 
     if str_A == str_B:
-        flag = 1
+        print(cnt)
         break 
 
-if flag == 1:
-    print(n)
-else:
-    print(-1)
+    if i == leng - 1: print("-1")
