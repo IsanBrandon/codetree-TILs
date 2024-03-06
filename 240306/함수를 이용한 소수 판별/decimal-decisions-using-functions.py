@@ -13,6 +13,6 @@ ans = 0
 
 for i in range(a, b+1):
     if is_prime(i):
-        ans += 1
+        ans += i
 
 print(ans)
