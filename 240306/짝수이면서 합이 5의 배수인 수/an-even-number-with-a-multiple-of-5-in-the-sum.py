@@ -1,11 +1,15 @@
 def is_magic_number(n):
     tens = n // 10
     units = n % 10
-    return tens + units 
+    sum_val = tens + units 
+
+    if sum_val % 5 == 0:
+        ans = "Yes"
+    else:
+        ans = "No"
+    
+    return ans
+
 
 n = int(input())
-
-if is_magic_number(n) % 5 == 0:
-    print("Yes")
-else:
-    print("No")
+print(is_magic_number(n))
