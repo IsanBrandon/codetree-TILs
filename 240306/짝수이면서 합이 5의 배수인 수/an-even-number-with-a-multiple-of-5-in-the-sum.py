@@ -3,7 +3,7 @@ def is_magic_number(n):
     units = n % 10
     sum_val = tens + units 
 
-    if sum_val % 5 == 0:
+    if sum_val % 2 == 0 and sum_val % 5 == 0:
         ans = "Yes"
     else:
         ans = "No"
