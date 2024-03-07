@@ -1,5 +1,4 @@
 y, m, d = tuple(map(int, input().split()))
-    
 #################################################################        
 # def {윤년인지 확인}
 def is_leap_year(y):
@@ -39,9 +38,9 @@ def not_leaf_judge_day(m, d):
 # def {존재하는 날인지 확인해주기}
 def is_exist_day(y, m, d):
     if is_leap_year(y):
-        return leaf_judge_day(m, d)
+        return True
     else:
-        return not_leaf_judge_day(m, d)
+        return False
 #################################################################
 # def {존재하는 날이라면 계절을 뽑아주기}
 def that_day_the_season(m):
