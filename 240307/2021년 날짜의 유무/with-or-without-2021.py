@@ -3,8 +3,8 @@ n_M, n_D = tuple(map(int, input().split()))
 def date_exsist(M, D):
     if M >= 13 or D > 31:
         return False
-    elif M == 2 and D <= 28:
-        return True
+    elif M == 2 and D > 28:
+        return False
     elif M <= 7 and M % 2 != 0 and D <= 31:
         return True
     elif M <= 7 and M % 2 == 0 and D <= 30:
