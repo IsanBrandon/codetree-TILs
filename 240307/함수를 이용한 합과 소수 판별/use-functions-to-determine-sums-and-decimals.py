@@ -1,15 +1,20 @@
 a, b = tuple(map(int, input().split()))
 
 def is_miracle_number(n):
-    flag = True
+    if n == 1:
+        return False
+    
     for i in range(2, n):
         if n % i == 0:
-            flag = False
-    return flag 
+            return False
 
-def is_even(n):
-    if ((n//10) + (n%10)) % 2 == 0:
+    return True
+
+def is_digit_sum_even(n):
+    digit_sum = (n // 100) + ((n // 10) % 10) + (n % 10)
+    if digit_sum % 2 == 0:
         return True
+    return False
 
 cnt = 0
 for i in range(a, b+1):
