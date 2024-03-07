@@ -14,7 +14,7 @@ def is_leap_year(y):
 def leaf_last_day_number(m):
     if m == 2:
         return 29
-    if m == 2 or m == 6 or m == 9 or m == 11:
+    if m == 4 or m == 6 or m == 9 or m == 11:
         return 30
     return 31
 
@@ -28,7 +28,7 @@ def leaf_judge_day(m, d):
 def not_leaf_last_day_number(m):
     if m == 2:
         return 28
-    if m == 2 or m == 6 or m == 9 or m == 11:
+    if m == 4 or m == 6 or m == 9 or m == 11:
         return 30
     return 31
 
