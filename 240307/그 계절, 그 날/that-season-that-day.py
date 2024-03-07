@@ -1,6 +1,6 @@
 y, m, d = tuple(map(int, input().split()))
 #################################################################        
-# def {윤년인지 확인}
+# 윤년인지 확인
 def is_leap_year(y):
     if y % 4 != 0:
         return False
@@ -10,7 +10,7 @@ def is_leap_year(y):
         return True
     return False
 #################################################################        
-# def set {윤년일 때 존재여부 체크}
+# 윤년일 때 존재여부 체크
 def leaf_last_day_number(m):
     if m == 2:
         return 29
@@ -21,8 +21,10 @@ def leaf_last_day_number(m):
 def leaf_judge_day(m, d):
     if m <= 12 and d <= leaf_last_day_number(m):
         return True 
-    return False
-#
+    else:
+        return False
+
+# 윤년 아닐 때 존재여부 체크 
 def not_leaf_last_day_number(m):
     if m == 2:
         return 28
@@ -33,9 +35,10 @@ def not_leaf_last_day_number(m):
 def not_leaf_judge_day(m, d):
     if m <= 12 and d <= not_leaf_last_day_number(m):
         return True 
-    return False
+    else:
+        return False
 #################################################################
-# def {존재하는 날인지 확인해주기}
+# 존재하는 날인지 확인해주기
 def is_exist_day(y, m, d):
     if is_leap_year(y):
         if leaf_judge_day(m, d):
@@ -43,12 +46,12 @@ def is_exist_day(y, m, d):
         else:
             return False
     else:
-        if not_leaf_judge_day(m,d):
+        if not_leaf_judge_day(m, d):
             return True
         else:
             return False
 #################################################################
-# def {존재하는 날이라면 계절을 뽑아주기}
+# 존재하는 날이라면 계절을 뽑아주기
 def that_day_the_season(m):
     if m >= 3 and m <= 5:
         return "Spring"
@@ -63,4 +66,4 @@ def that_day_the_season(m):
 if is_exist_day(y, m, d):
     print(that_day_the_season(m))
 else:
-    print(-1)
+    print("-1")
