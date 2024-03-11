@@ -1,13 +1,12 @@
 string = input()
-leng = len(string)
 
 def is_magic_string(string):
-    s = string[0]
-    flag = False
-    for i in range(1, leng):
-        if string[i] != s:
-            flag = True
-    return flag
+    leng = len(string)
+    for i in range(leng):
+        if string[i] != string[0]:
+            return True
+    
+    return False
 
 if is_magic_string(string):
     print("Yes")
