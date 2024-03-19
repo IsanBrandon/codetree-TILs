@@ -1,18 +1,17 @@
 n = int(input())
 
-def print_stars1(n):
+def print_stars(n):
     if n == 0:
         return
 
-    print_stars1(n-1)
-    print("* " * n)
+    for _ in range(n):
+        print("*", end=" ")
+    print()
 
-def print_stars2(n):
-    if n == 0:
-        return
+    print_stars(n-1)
 
-    print("* " * n)
-    print_stars2(n-1)
+    for _ in range(n):
+        print("*", end=" ")
+    print()
 
-print_stars2(n)
-print_stars1(n)
+print_stars(n)
