@@ -1,5 +1,5 @@
 n = int(input())
-arr = list(map(int, input()))
+arr = list(map(int, input().split()))
 
 def max_value(a):
     if a == 0:
