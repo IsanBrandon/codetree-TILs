@@ -10,5 +10,8 @@ arr = list(map(int, input().split()))
 s_arr = sorted(arr)
 r_arr = list(reversed(s_arr))
 
-print(s_arr)
-print(r_arr)
+for elem in s_arr:
+    print(elem, end=" ")
+print()
+for elem in r_arr:
+    print(elem, end=" ")
