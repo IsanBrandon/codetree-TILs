@@ -21,7 +21,7 @@ arrB.sort()
 #         flag = False
 
 # 수열이 일치하는지 확인.
-if flag:
+if flag():
     print("Yes")
 else:
     print("No")
