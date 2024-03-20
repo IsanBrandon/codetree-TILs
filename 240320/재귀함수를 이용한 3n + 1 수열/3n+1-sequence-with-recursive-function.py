@@ -9,4 +9,4 @@ def get_ans(a):
     else:
         return get_ans(3 * a + 1) + 1
 
-print(get_ans(a))
+print(get_ans(n))
