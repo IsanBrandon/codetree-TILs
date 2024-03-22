@@ -1,9 +1,10 @@
+# 변수 선언 및 입력
 n = int(input())
 arr = list(map(int, input().split()))
 
 # 1. 입력 받은 번째까지 새로운 리스트에 담아내고
 # 2. sorting 시킨 다음
-# 3. 중간값 뽑아주기
+# 3. return으로 중간값을 뽑아주기
 def sorting(n):
     arr_sorted = []
     for j in range(n):
