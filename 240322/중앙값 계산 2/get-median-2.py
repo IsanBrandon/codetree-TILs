@@ -9,7 +9,7 @@ def sorting(n):
     for j in range(n):
         arr_sorted.append(arr[j])
     arr_sorted.sort()
-    return arr_sorted[((n-1) // 2)]
+    return arr_sorted[(n // 2)]
 
 ans_arr = []
 
