@@ -14,8 +14,12 @@ def sorting(n):
 ans_arr = []
 
 for i in range(n):
-    if i % 2 == 0:
+    if i == 0:
+        ans_arr.append(arr[0])
+    elif i % 2 == 0:
         ans_arr.append(sorting(i))
+    else:
+        pass
 
 for elem in ans_arr:
     print(elem, end=" ")
