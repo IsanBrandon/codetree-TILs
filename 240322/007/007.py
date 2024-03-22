@@ -6,7 +6,7 @@ class _007:
         self.mp = mp
         self.t = t
 
-_007_1 = _007(s_c, m_p, t)
+_007_1 = _007(s_c, m_p, int(t))
 
 print(f"secret code : {_007_1.sc}")
 print(f"meeting point : {_007_1.mp}")
