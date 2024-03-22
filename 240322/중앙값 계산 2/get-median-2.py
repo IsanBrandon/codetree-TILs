@@ -12,8 +12,10 @@ def sorting(n):
     arr_sorted.sort()
     return arr_sorted[(n // 2)]
 
+# 답들을 담을 리스트
 ans_arr = []
 
+# 짝수번째마다 끊어서 중간값을들 답 리스트에 담기
 for i in range(n):
     if i == 0:
         ans_arr.append(arr[0])
@@ -22,5 +24,6 @@ for i in range(n):
     else:
         pass
 
+# 답 출력하기
 for elem in ans_arr:
     print(elem, end=" ")
