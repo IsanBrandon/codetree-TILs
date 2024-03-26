@@ -9,7 +9,7 @@ agents = []
 
 for _ in range(5):
     code_name, score = tuple(input().split())
-    agents.append[Agents(code_name, int(score))]
+    agents.append(Agents(code_name, int(score)))
 
 # 최소 점수를 갖는 유저 찾기
 min_idx = 0 
