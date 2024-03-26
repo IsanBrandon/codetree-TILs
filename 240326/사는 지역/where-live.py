@@ -12,6 +12,11 @@ for _ in range(n):
     name, loc_num, loc_name = tuple(input().split())
     people.append(People(name, loc_num, loc_name))
 
-print(f"name {people[n-1].name}")
-print(f"addr {people[n-1].loc_num}")
-print(f"city {people[n-1].loc_name}")
+idx = 0
+for i in range(1, n):
+    if people[idx].name[0] < people[i].name[0]:
+        idx = i
+
+print(f"name {people[idx].name}")
+print(f"addr {people[idx].loc_num}")
+print(f"city {people[idx].loc_name}")
