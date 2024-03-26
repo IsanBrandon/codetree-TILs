@@ -8,7 +8,7 @@ for _ in range(n):
     name, kor, eng, math = tuple(input().split())
     students.append(Student(name, int(kor), int(eng), int(math)))
 
-students.sort(key=lambda x: x.kor + -x.eng + -x.math)
+students.sort(key=lambda x: x.kor + x.eng + x.math)
 
 for student in students: # 정렬 이후의 결과 출력
     print(student.name ,student.kor, student.eng, student.math)
