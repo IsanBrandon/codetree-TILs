@@ -1,20 +1,23 @@
 class Student:
-    def __init__(n, h, w):
-        self.n, self.h, self.w = n, h, w
+    def __init__(self, name, height, weight):
+        self.name, self.height, self.weight = name, height, weight
 
 students = []
 for _ in range(5):
-    n, h, w = tuple(input().split())
-    students.append(Student(n, h, w))
+    name, height, weight = tuple(input().split())
+    students.append(Student(name, int(height), float(weight)))
 
 students.sort(key=lambda x: x.name)
 
 print("name")
 for student in students:
-    print(student.name, student.h, student.w)
+    print(student.name, student.height, student.weight)
 
-students.sort(key=lambda x: x.h)
+print()
+
+students.sort(key=lambda x: -x.h)
 
 print("height")
+
 for student in students:
-    print(student.name, student.h, student.w)
+    print(student.name, student.height, student.weight)
