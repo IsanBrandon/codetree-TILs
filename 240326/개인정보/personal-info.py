@@ -15,7 +15,7 @@ for student in students:
 
 print()
 
-students.sort(key=lambda x: -x.h)
+students.sort(key=lambda x: -x.height)
 
 print("height")
 
