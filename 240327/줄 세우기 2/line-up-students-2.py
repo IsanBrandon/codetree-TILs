@@ -8,6 +8,7 @@ for i in range(1, n+1):
     h, w = tuple(map(int, input().split()))
     students.append(Student(h, w, i))
 
+# custom comparator
 students.sort(key=lambda x: (x.h, -x.w))
 
 for student in students:
