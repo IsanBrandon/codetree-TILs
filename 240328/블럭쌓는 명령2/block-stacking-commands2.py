@@ -1,9 +1,26 @@
 n, k = tuple(map(int, input().split()))
-arr = [0] * (n+1)
+segment = [
+    tuple(map(int, input().split()))
+    for _ in range(k)
+]
 
-for _ in range(k):
-    start, end = tuple(map(int, input().split()))
-    for i in range(start, end+1):
-        arr[i] += 1
+blocks = [0] * (n + 1)
 
-print(max(arr))
+# 블럭을 특정 구간에 쌓아줍니다.
+for a, b in segments:
+    for i in range(a, b+1):
+        blocks[i] += 1
+
+# 최댓값을 구합니다.
+max_num = max(blocks)
+print(max_num)
+
+### MINE ###
+# arr = [0] * (n+1)
+
+# for _ in range(k):
+#     start, end = tuple(map(int, input().split()))
+#     for i in range(start, end+1):
+#         arr[i] += 1
+
+# print(max(arr))
