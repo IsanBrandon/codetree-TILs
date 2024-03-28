@@ -1,5 +1,5 @@
 n, k = tuple(map(int, input().split()))
-segment = [
+segments = [
     tuple(map(int, input().split()))
     for _ in range(k)
 ]
