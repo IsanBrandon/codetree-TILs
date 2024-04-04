@@ -15,7 +15,7 @@ for i in range(n):
 
     ans = max(ans, cnt)
 
-if ans <= 2:
+if ans <= 1:
     print("0")
 else:
     print(ans)
