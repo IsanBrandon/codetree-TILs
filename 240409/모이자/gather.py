@@ -1,29 +1,19 @@
 import sys
+
 INT_MAX = sys.maxsize
 
+# 변수 선언 및 입력
 n = int(input())
 arr = list(map(int, input().split()))
 
-min_val = INT_MAX
+min_dist = INT_MAX
+# 각 i번째 집으로 모였을 때의 합을 구해줍니다. 
 for i in range(n):
-
-    sum_diff = 0
+    sum_dist = 0
     for j in range(n):
-        sum_diff += arr[j] * abs(i - j)
+        sum_dist += arr[j] * abs(i - j)
 
-    min_val = min(min_val, sum_diff)
+    # 가능한 거리의 합 중 최솟값을 구해줍니다.
+    min_dist = min(min_dist, sum_dist)
 
-print(min_val)
-
-# max_sum = 0
-# for i in range(n):
-#     arr[i] *= 2
-
-#     sum_diff = 0
-#     for j in range(n - 1): 
-#         sum_diff += abs(arr[j + 1] - arr[j])
-
-#     max_sum = max(max_sum, sum_diff)
-#     arr[i] //= 2
-
-# print(max_sum)
+print(min_dist)
