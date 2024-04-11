@@ -28,7 +28,7 @@ for i in range(1, n - 1):
             continue
         dist += abs(arr[prev_idx][0] - arr[j][0]) + abs(arr[prev_idx][1] - arr[j][1])
         prev_idx = j
-
+# 이전 인덱스를 미리 잡아주고 다음 인덱스부터 for문 돌며 dist 구해주기!
     ans = min(ans, dist)
 
 ###### MINE ######################################################
