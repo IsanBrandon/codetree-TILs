@@ -9,7 +9,7 @@ arr = list(map(int, input().split()))
 sum_val = sum(arr)
 min_gap = INT_MAX
 for i in range(n): 
-    for j in range(n):
+    for j in range(i+1, n):
         # if i == j:
         #     continue
         new_sum = sum_val - (arr[i] + arr[j])
