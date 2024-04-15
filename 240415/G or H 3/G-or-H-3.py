@@ -8,7 +8,7 @@ for _ in range(n):
     a, b = tuple(input().split())
     a = int(a)
 
-    arr[x] = 1 if b == 'G' else 2
+    arr[a] = 1 if b == 'G' else 2
 
 # 모든 구간의 시작점을 잡아봅니다.
 max_sum = 0
