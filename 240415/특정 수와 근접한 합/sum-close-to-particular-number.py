@@ -10,8 +10,8 @@ sum_val = sum(arr)
 min_gap = INT_MAX
 for i in range(n): 
     for j in range(n):
-        if i == j:
-            continue
+        # if i == j:
+        #     continue
         new_sum = sum_val - (arr[i] + arr[j])
         gap = abs(s - new_sum)
         min_gap = min(min_gap, gap)
