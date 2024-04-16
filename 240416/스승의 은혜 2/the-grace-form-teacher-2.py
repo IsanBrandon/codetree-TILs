@@ -17,7 +17,7 @@ for i in range(n):
         curr_exp -= arr[i]
         cnt -= 1
         feasibility = arr[i] // 2
-        if curr_exp + feasibility >= b:
+        if curr_exp + feasibility > b:
             print(cnt)
             break
         else:
