@@ -10,13 +10,13 @@ curr_exp = 0
 cnt = 0
 feasibility = 0
 for i in range(n):
-    curr_exp += arr[i]
+    curr_exp += sorted_arr[i]
     cnt += 1
 
     if curr_exp > b:
-        curr_exp -= arr[i]
+        curr_exp -= sorted_arr[i]
         cnt -= 1
-        feasibility = arr[i] // 2
+        feasibility = sorted_arr[i] // 2
         if curr_exp + feasibility > b:
             print(cnt)
             break
