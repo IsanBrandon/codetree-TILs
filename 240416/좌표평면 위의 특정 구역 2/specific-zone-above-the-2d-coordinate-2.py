@@ -22,7 +22,7 @@ for i in range(n):
     #            y좌표 중 최소, 최대를 구해야 합니다.
     min_x, max_x = INT_MAX, 1 
     min_y, max_y = INT_MAX, 1
-    squre = 0
+    # squre = 0
     for j, (x, y) in enumerate(arr):
         # i번째 점은 제외합니다.
         if j == i:
@@ -36,8 +36,8 @@ for i in range(n):
         min_x, max_x = min(min_x, x), max(max_x, x)
         min_y, max_y = min(min_y, y), max(max_y, y)
     
-    squre = (max_x - min_x) * (max_y - min_y)
-    ans = min(squre, ans)
+    # squre = (max_x - min_x) * (max_y - min_y)
+    ans = min(ans, (max_x - min_x) * (max_y - min_y))
 
 print(ans)
 
