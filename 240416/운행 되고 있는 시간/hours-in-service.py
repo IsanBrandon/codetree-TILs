@@ -45,5 +45,3 @@ print(ans)
     #         count[k] += 1
     #     max_sheet = max(count)
     #     ans = max(ans, max_sheet)
-
-print(ans)
