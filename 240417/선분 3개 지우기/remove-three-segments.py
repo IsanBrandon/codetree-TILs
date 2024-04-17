@@ -7,20 +7,6 @@ section = [
     for _ in range(n)
 ]
 
-
-# def get_max_overlapped_cnt(i1, i2, i3):
-#     count = [0] * 101
-#     for i in range(n):
-#         if i in [i1, i2, i3]:
-#             continue
-        
-#         x1, x2 = section[i]
-#         for j in range(x1, x2 + 1):
-#             count[j] += 1
-
-#         return max(count)
-
-
 # 3개의 선분을 모두 골라보면서
 # 모두 겹쳐지지 않도록 하는 가짓수를 구합니다.
 ans = 0
@@ -31,9 +17,6 @@ for i in range(n):
             # 모든 선분이 겹치지 않으면 정답을 1 추가합니다. 
 
             # overlap : 모든 선분이 겹치지 않으면 false
-
-            # if get_max_overlapped_cnt(i, j, k) == 1:
-            #     ans += 1
             overlap = False 
             arr = [0] * (MAX_A + 1)
 
