@@ -10,9 +10,9 @@ def intersecting(a, b, c, d):
         return True 
 
 if intersecting(a, b, c, d):
-    print("nonintersecting")
-else:
     print("intersecting")
+else:
+    print("nonintersecting")
 
 
 # for i in range(a, b + 1):
