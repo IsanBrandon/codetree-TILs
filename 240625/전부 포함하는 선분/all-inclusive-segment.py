@@ -9,16 +9,15 @@ lines = [
 
 ans = INT_MAX
 
-for i in range(n):
+for skip in range(n):
     leftest = INT_MAX
     rightest = - (INT_MAX)
     for j in range(n):
-        if i == j :
+        if j == skip :
             continue
-        else:
-            left, right = lines[j]
-            leftest = min(leftest, left)
-            rightest = max(rightest, right)
+        left, right = lines[j]
+        leftest = min(leftest, left)
+        rightest = max(rightest, right)
     ans = min(ans, (rightest - leftest))
 
 print(ans)
