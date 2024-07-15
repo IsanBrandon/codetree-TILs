@@ -3,7 +3,7 @@ n = int(input())
 arr = list(map(int, input().split()))
 
 
-def buble_sort():
+def bubble_sort():
     is_sorted = False
     while not is_sorted:
         is_sorted = True
