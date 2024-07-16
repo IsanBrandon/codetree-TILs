@@ -15,7 +15,7 @@ def seletion_sort():
         # arr[minimum] = tmp
         arr[i], arr[minimum] = arr[minimum], arr[i]
     
-    return arr
+    # return arr
 
 
 seletion_sort()
