@@ -3,14 +3,15 @@ arr = list(map(int, input().split()))
 
 
 def insertion_sort():
-    for i in range(n):
-        j = i - 1
-        key = arr[i]
-        while (j >= 0 & arr[j] > key):
+    for i in range(1, n):
+        j, key = (i - 1), arr[i]
+        while (j >= 0 and arr[j] > key):
             arr[j + 1] = arr[j]
             j -= 1
         arr[j + 1] = key
 
+
+insertion_sort()
 
 for elem in arr:
     print(elem, end=" ")
