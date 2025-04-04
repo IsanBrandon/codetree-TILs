@@ -100,4 +100,4 @@ for _ in range(m):
 it = l.begin()
 while it != l.end():
     print(it.data, end="")
-    if = it.next
+    it = it.next
