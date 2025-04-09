@@ -11,3 +11,7 @@ def bubble_sort():
                 arr[i], arr[i + 1] = arr[i + 1], arr[i]
                 is_sorted = False
 
+bubble_sort()
+
+for elem in arr:
+    print(elem, end=" ")
