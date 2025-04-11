@@ -24,3 +24,8 @@ def heap_sort():
     for i in range(n, 1, -1):
         arr[l], arr[i] = arr[i], arr[l]
         heapity(i - 1, 1)
+
+heap_sort()
+
+for elem in arr[1:]:
+    print(elem, end=" ")
