@@ -16,3 +16,7 @@ for seqence in range(t):
 
 print(*u)
 print(*d)
+
+# for elem in u:
+#   print(elem, end=" ")
+# print()
